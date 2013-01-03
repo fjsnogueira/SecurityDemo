@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BankTransferWeb.Views.Shared.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="title">
+            <h1>Haack Bank and Casino</h1>
+            <h2>You can trust us. Really!</h2>
+        </div>
+        <div id="header">
+            <div id="logindisplay">
+                <strong>Welcome <asp:LoginName runat="server" />!</strong>  <asp:LoginStatus runat="server" />
+            </div> 
+            
+        </div>
+
+        <div id="main">
+            <a href="/BankWebForm/Default.aspx">Try the ASP.NET MVC Demo</a>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>

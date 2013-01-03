@@ -1,0 +1,15 @@
+﻿<html>
+<head><title></title></head>
+<body style="float: left">
+    <div id="ids" style="width: 100px; float: left;"><b>IDs</b></div>
+    <div id="balances" style="width: 100px; float: left;"><b>Balances</b></div>
+    
+    <script type="text/javascript">
+        var balances = document.getElementById("balances");
+        var ids = document.getElementById("ids");
+        Object.prototype.__defineSetter__('Id', function(obj) { ids.innerHTML += '<br />' + obj; });
+        Object.prototype.__defineSetter__('Balance', function(obj) { balances.innerHTML += '<br />' + obj; });
+    </script>
+    <script type="text/javascript" src="http://localhost:54607/Home/AdminBalances"></script>
+</body>
+</html>
